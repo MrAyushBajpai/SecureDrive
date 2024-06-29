@@ -1,4 +1,0 @@
-# requirements.txt
-Flask
-face_recognition
-opencv-python
