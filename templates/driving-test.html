@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctored Driving Test</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#question-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-title {
+    margin-bottom: 10px;
+}
+
+#question-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#answer-options button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#next-question {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="question-container">
+        <h2 id="question-title">Question 1</h2>
+        <img id="question-image" src="question1.jpg" alt="Question Image">
+        <div id="answer-options">
+            <button onclick="submitAnswer('A')">Option A</button>
+            <button onclick="submitAnswer('B')">Option B</button>
+            <button onclick="submitAnswer('C')">Option C</button>
+            <button onclick="submitAnswer('D')">Option D</button>
+        </div>
+        <button id="next-question" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <script src="js/test-loader.js"></script>
+</body>
+</html>
